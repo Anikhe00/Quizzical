@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Question from "./components/Question";
+import Intro from "./components/Intro";
 import Button from "./components/Button";
 import Confetti from "react-confetti";
 import blob1 from "./assets/blobs-right.svg";
@@ -66,7 +67,7 @@ function App() {
   };
 
   return (
-    <main className="relative w-[100%] max-w-[45rem] h-[100%] flex flex-col items-center justify-items-start bg-background px-[1.5rem] py-[1.5rem] md:px-[3rem] md:py-[3rem] lg:px-[4.5rem] lg:py-[3rem]">
+    <main className="relative w-[100%] max-w-[45rem] h-[100%] flex flex-col items-center justify-center bg-background px-[1.5rem] py-[1.5rem] md:px-[3rem] md:py-[3rem] lg:px-[4.5rem] lg:py-[3rem]">
       <img src={blob1} className="absolute right-0 top-0" />
       <img src={blob2} className="absolute left-0 bottom-0" />
       {submitted && score === questions.length && (
@@ -75,17 +76,7 @@ function App() {
         </div>
       )}
       {showIntro ? (
-        <section className="h-[100%] w-full flex flex-col justify-center items-center gap-[1.5rem]">
-          <div className="flex flex-col gap-[0.75rem] justify-center items-center">
-            <h1 className="text-primary-dark text-[2rem] font-bold leading-[100%] font-karla">
-              Quizzical
-            </h1>
-            <p className="text-[1rem] font-normal leading-[100%] font-inter text-primary-dark">
-              Some description if needed
-            </p>
-          </div>
-          <Button label="Start Quiz" onClick={handleStart} />
-        </section>
+        <Intro handleStart={handleStart} />
       ) : (
         <form className="flex z-10 flex-col justify-start items-start gap-[1.5rem]">
           {loading ? (
