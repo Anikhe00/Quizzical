@@ -7,7 +7,7 @@ export default function Intro({ handleStart }) {
         <h1 className="text-primary-dark text-[2rem] font-bold leading-[100%] font-karla">
           Quizzical
         </h1>
-        <p className="text-[1rem] font-normal leading-[100%] font-inter text-primary-dark">
+        <p className="text-[1rem] text-center font-normal leading-[100%] font-inter text-primary-dark">
           A fun trivia challenge to test your knowledge across all topics.
         </p>
       </div>
