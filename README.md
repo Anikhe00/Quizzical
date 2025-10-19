@@ -31,13 +31,13 @@ A modern, fun, and responsive quiz web app built with React and Vite that tests 
 
 ## Screenshots
 
-> ![Quiz Home Screen](/src/assets/images/quizzical-home.png)
+> ![Quiz Home Screen](./src/assets/images/quizzical-home.png)
 
-> ![Quiz Question Interface](/src/assets/images/quizzical-questions.png)
+> ![Quiz Question Interface](./src/assets/images/quizzical-questions.png)
 
-> ![Quiz Answers Interface](/src/assets/images/quizzical-answered.png)
+> ![Quiz Answers Interface](./src/assets/images/quizzical-answered.png)
 
-> ![Quiz Result Summary](/src/assets/images/quizzical-result.png)
+> ![Quiz Result Summary](./src/assets/images/quizzical-result.png)
 
 ---
 
