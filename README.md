@@ -1,16 +1,154 @@
-# React + Vite
+# Quizzical 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fun, and responsive quiz web app built with React and Vite that tests users' knowledge on a variety of topics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## React Compiler
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Live Demo](#live-demo)
+- [Tech Stack](#tech-stack)
+- [Folder Structure](#folder-structure)
+- [Getting Started (Local Setup)](#getting-started-local-setup)
+- [Possible Enhancements / To-Do](#possible-enhancements-to-do)
+- [Author](#author)
+- [License](#license)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Responsive quiz interface for any device
+- Multiple choice questions with selectable answers
+- Real-time display of correct/incorrect answers
+- Summary of results at the end of a quiz
+- Fun, interactive UI with clean animations and styling
+- Built with modern frontend tooling for performance & developer experience
+
+---
+
+## Screenshots
+
+> ![Quiz Home Screen](/src/assets/images/quizzical-home.png)
+
+> ![Quiz Question Interface](/src/assets/images/quizzical-questions.png)
+
+> ![Quiz Answers Interface](/src/assets/images/quizzical-answered.png)
+
+> ![Quiz Result Summary](/src/assets/images/quizzical-result.png)
+
+---
+
+## Live Demo
+
+> [Play Game](https://quizzical-bice.vercel.app/)
+
+---
+
+## Features
+
+- 🎮 Interactive game interface
+- 🤖 Random computer hand generation
+- 🕐 Countdown timer for user input
+- ✊🖐✌️ Hand image display for both user and computer
+- 🧾 Result modal showing win/lose/tie with icons
+- 📈 Score tracking for both players
+- 🔁 "Play Again" feature to restart the game
+
+---
+
+## Tech Stack
+
+- **React** - Component-based UI library
+- **Vite** - Fast build tool for React projects
+- **TailwindCSS** - Utility-first CSS framework for rapid styling
+- **Open Trivia Database** - API for fetching quiz questions
+- **React Confetti** - Confetti animation library for celebration
+
+---
+
+## Folder Structure
+
+```bash
+Quizzical/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   │       ├── blobs-left.svg
+│   │       └── blobs-right.svg
+│   ├── components/
+│   │   ├── AnswerButton.jsx
+│   │   ├── Button.jsx
+│   │   ├── Intro.jsx
+│   │   ├── Question.jsx
+│   │   ├── Answers.jsx
+│   │   └── Result.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   ├── index.js
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+## Getting Started (Local Setup)
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/Anikhe00/Quizzical.git
+   ```
+
+2. Open the folder:
+
+   ```bash
+   cd Quizzical
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   - The app will be available at `http://localhost:3000`
+
+---
+
+## 📌 To Do (Optional Enhancements)
+
+- Add quiz categories and difficulty levels
+- Add sound/animation effects for better feedback
+- Improve accessibility (keyboard navigation, screen-reader support)
+
+---
+
+## 👩‍💻 Author
+
+- **Name:** Akanji Shakirat
+- **Role:** Product Designer & Frontend Developer
+- **Contact:** [LinkedIn](https://www.linkedin.com/in/your-link)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
